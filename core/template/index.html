@@ -1,0 +1,22 @@
+
+
+{%extends 'base.html'%}
+{%block body%}
+<h1>INDEX page</h1>
+<h2>Books and their authors</h2>
+
+<ul>
+    {%for kitab in books%}
+    <li>
+        <b>Kitab:</b> {{kitab.name}}
+        <br>
+        <b>Muellifi:</b>{{kitab.author_name}}
+        <br>
+        <b>Mezmunu:</b> {{kitab.content}}
+        <br>
+        <b>Kitab qiymeti</b> {{kitab.price}}
+    </li>
+    <br>
+    {%endfor%}
+</ul>
+{%endblock body%}
